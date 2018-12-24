@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">//设置主页
+    android:orientation="vertical"
+    android:background="#ffffff">//设置主页
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -28,4 +29,91 @@
             android:textColor="@android:color/white"
             android:textSize="17sp" />
     </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/settingOne"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:background="@drawable/relative_onclick"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_marginLeft="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号安全"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:textColor="#000000"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/more"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="340dp"
+        android:layout_height="1px"
+        android:layout_gravity="center"
+        android:background="#999999">
+    </View>
+    <RelativeLayout
+        android:id="@+id/settingTwo"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:background="@drawable/relative_onclick"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_marginLeft="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帮助与反馈"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:textColor="#000000"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/more"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="340dp"
+        android:layout_height="1px"
+        android:layout_gravity="center"
+        android:background="#999999">
+    </View>
+    <RelativeLayout
+        android:id="@+id/settingThree"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="@drawable/relative_onclick"
+        android:clickable="true"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:text="关于"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/more"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="340dp"
+        android:layout_height="1px"
+        android:layout_gravity="center"
+        android:background="#999999">
+    </View>
 </LinearLayout>

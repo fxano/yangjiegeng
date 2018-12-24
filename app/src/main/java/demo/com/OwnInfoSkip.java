@@ -80,6 +80,5 @@ public class OwnInfoSkip extends Activity {
                 overridePendingTransition(0,0);
             }
         });
-
     }
 }

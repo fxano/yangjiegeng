@@ -1,15 +1,16 @@
 package demo.com;
-import android.app.Activity;
+
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
-public class MyFans extends Activity {
+
+public class SettingHelp extends AppCompatActivity {
+
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.myfans_activity);
+        setContentView(R.layout.settinghelp_activity);
         RelativeLayout imgback =findViewById(R.id.imgback);
         imgback.setOnClickListener(new View.OnClickListener() {
             @Override
