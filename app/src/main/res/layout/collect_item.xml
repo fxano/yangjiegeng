@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="67dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white">
+        <ImageView
+            android:id="@+id/collectimg"
+            android:layout_width="67dp"
+            android:layout_alignParentLeft="true"
+            android:layout_height="67dp"/>
+        <TextView
+            android:id="@+id/collecttit"
+            android:layout_toRightOf="@id/collectimg"
+            android:layout_marginLeft="13dp"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/collectcov"
+            android:layout_toRightOf="@id/collectimg"
+            android:layout_below="@id/collecttit"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:textSize="12sp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/collectdel"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="20dp"
+            android:visibility="invisible"
+            android:src="@mipmap/itemdel"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+</RelativeLayout>
