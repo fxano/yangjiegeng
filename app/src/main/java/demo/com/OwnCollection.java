@@ -23,7 +23,7 @@ public class OwnCollection extends Activity {
             }
         });
         initCollect();
-        final CollectionAdapter adapter=new CollectionAdapter(OwnCollection.this,R.layout.collect_item,collectList);
+        final CollectionAdapter adapter=new CollectionAdapter(OwnCollection.this,R.layout.item_collect,collectList);
         final ListView listview = (ListView) findViewById(R.id.collectionList);
         listview.setAdapter(adapter);
         RelativeLayout delbuttom =findViewById(R.id.delbuttom);

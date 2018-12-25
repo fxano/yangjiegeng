@@ -39,7 +39,7 @@
                 android:textColor="#999999"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/fabu"
+            android:id="@+id/release"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:orientation="vertical"
