@@ -16,7 +16,7 @@ public class LoginActivity extends Activity {//余松彦
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this,FollowMain.class));
                 finish();
-                overridePendingTransition(0,0);
+//                overridePendingTransition(0,0);
             }
         });
         LinearLayout my = (LinearLayout) findViewById(R.id.my);//跳转到我的
@@ -25,7 +25,7 @@ public class LoginActivity extends Activity {//余松彦
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this,OwnInfoSkip.class));
                 finish();
-                overridePendingTransition(0,0);
+//                overridePendingTransition(0,0);
             }
         });
     }

@@ -68,7 +68,6 @@ public class OwnInfoSkip extends Activity {
             public void onClick(View v) {
                 startActivity(new Intent(OwnInfoSkip.this,FollowMain.class));
                 finish();
-                overridePendingTransition(0,0);
             }
         });
         LinearLayout index = (LinearLayout) findViewById(R.id.index);//跳转到首页
@@ -77,7 +76,6 @@ public class OwnInfoSkip extends Activity {
             public void onClick(View v) {
                 startActivity(new Intent(OwnInfoSkip.this,LoginActivity.class));
                 finish();
-                overridePendingTransition(0,0);
             }
         });
     }

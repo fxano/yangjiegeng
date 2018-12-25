@@ -16,7 +16,7 @@ public class FollowMain extends Activity{
             public void onClick(View v) {
                 startActivity(new Intent(FollowMain.this,OwnInfoSkip.class));
                 finish();
-                overridePendingTransition(0,0);
+//                overridePendingTransition(0,0);
             }
         });
         LinearLayout index = (LinearLayout) findViewById(R.id.index);//跳转到首页
@@ -25,7 +25,7 @@ public class FollowMain extends Activity{
             public void onClick(View v) {
                 startActivity(new Intent(FollowMain.this,LoginActivity.class));
                 finish();
-                overridePendingTransition(0,0);
+//                overridePendingTransition(0,0);
             }
         });
     }
