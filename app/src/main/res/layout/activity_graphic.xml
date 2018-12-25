@@ -66,8 +66,6 @@
         android:gravity="center"
         android:layout_marginLeft="10dp"
         />
-
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="52dp"
