@@ -7,10 +7,10 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import java.util.ArrayList;
 import java.util.List;
-import demo.com.adapter.Collect;
+import demo.com.adapter.Entity_Collect;
 import demo.com.adapter.CollectionAdapter;
 public class OwnCollection extends Activity {
-    private List<Collect> collectList=new ArrayList<>();
+    private List<Entity_Collect> entityCollectList =new ArrayList<>();
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +23,7 @@ public class OwnCollection extends Activity {
             }
         });
         initCollect();
-        final CollectionAdapter adapter=new CollectionAdapter(OwnCollection.this,R.layout.item_collect,collectList);
+        final CollectionAdapter adapter=new CollectionAdapter(OwnCollection.this,R.layout.item_collect, entityCollectList);
         final ListView listview = (ListView) findViewById(R.id.collectionList);
         listview.setAdapter(adapter);
         RelativeLayout delbuttom =findViewById(R.id.delbuttom);
@@ -36,27 +36,27 @@ public class OwnCollection extends Activity {
         });
     }
     private void initCollect(){
-        Collect one=new Collect("哈哈哈","123",R.mipmap.pic);
-        collectList.add(one);
-        Collect two=new Collect("哈哈哈","123",R.mipmap.pic);
-        collectList.add(two);
-        Collect three=new Collect("哈哈哈","123",R.mipmap.pic);
-        collectList.add(three);
-        Collect four=new Collect("哈哈哈","123",R.mipmap.pic);
-        collectList.add(four);
-        Collect five=new Collect("哈哈哈","123",R.mipmap.pic);
-        collectList.add(five);
-        Collect six=new Collect("哈哈哈","123",R.mipmap.pic);
-        collectList.add(six);
-        Collect seven=new Collect("哈哈哈","123",R.mipmap.pic);
-        collectList.add(seven);
-        Collect eigth=new Collect("哈哈哈","123",R.mipmap.pic);
-        collectList.add(eigth);
-        Collect nine=new Collect("哈哈哈","123",R.mipmap.pic);
-        collectList.add(nine);
-        Collect ten=new Collect("哈哈哈","123",R.mipmap.pic);
-        collectList.add(ten);
-        Collect tenone=new Collect("哈哈哈","123",R.mipmap.pic);
-        collectList.add(tenone);
+        Entity_Collect one=new Entity_Collect("哈哈哈","123",R.mipmap.pic);
+        entityCollectList.add(one);
+        Entity_Collect two=new Entity_Collect("哈哈哈","123",R.mipmap.pic);
+        entityCollectList.add(two);
+        Entity_Collect three=new Entity_Collect("哈哈哈","123",R.mipmap.pic);
+        entityCollectList.add(three);
+        Entity_Collect four=new Entity_Collect("哈哈哈","123",R.mipmap.pic);
+        entityCollectList.add(four);
+        Entity_Collect five=new Entity_Collect("哈哈哈","123",R.mipmap.pic);
+        entityCollectList.add(five);
+        Entity_Collect six=new Entity_Collect("哈哈哈","123",R.mipmap.pic);
+        entityCollectList.add(six);
+        Entity_Collect seven=new Entity_Collect("哈哈哈","123",R.mipmap.pic);
+        entityCollectList.add(seven);
+        Entity_Collect eigth=new Entity_Collect("哈哈哈","123",R.mipmap.pic);
+        entityCollectList.add(eigth);
+        Entity_Collect nine=new Entity_Collect("哈哈哈","123",R.mipmap.pic);
+        entityCollectList.add(nine);
+        Entity_Collect ten=new Entity_Collect("哈哈哈","123",R.mipmap.pic);
+        entityCollectList.add(ten);
+        Entity_Collect tenone=new Entity_Collect("哈哈哈","123",R.mipmap.pic);
+        entityCollectList.add(tenone);
     }
 }

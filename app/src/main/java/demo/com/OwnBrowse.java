@@ -10,11 +10,11 @@ import android.widget.RelativeLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-import demo.com.adapter.Collect;
+import demo.com.adapter.Entity_Collect;
 import demo.com.adapter.CollectionAdapter;
 
 public class OwnBrowse extends Activity {
-    private List<Collect> browseList=new ArrayList<>();
+    private List<Entity_Collect> browseList=new ArrayList<>();
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,27 +40,27 @@ public class OwnBrowse extends Activity {
         });
     }
     private void initCollect(){
-        Collect one=new Collect("呵呵呵","456",R.mipmap.pic);
+        Entity_Collect one=new Entity_Collect("呵呵呵","456",R.mipmap.pic);
         browseList.add(one);
-        Collect two=new Collect("呵呵呵","456",R.mipmap.pic);
+        Entity_Collect two=new Entity_Collect("呵呵呵","456",R.mipmap.pic);
         browseList.add(two);
-        Collect three=new Collect("呵呵呵","456",R.mipmap.pic);
+        Entity_Collect three=new Entity_Collect("呵呵呵","456",R.mipmap.pic);
         browseList.add(three);
-        Collect four=new Collect("呵呵呵","456",R.mipmap.pic);
+        Entity_Collect four=new Entity_Collect("呵呵呵","456",R.mipmap.pic);
         browseList.add(four);
-        Collect five=new Collect("呵呵呵","456",R.mipmap.pic);
+        Entity_Collect five=new Entity_Collect("呵呵呵","456",R.mipmap.pic);
         browseList.add(five);
-        Collect six=new Collect("呵呵呵","456",R.mipmap.pic);
+        Entity_Collect six=new Entity_Collect("呵呵呵","456",R.mipmap.pic);
         browseList.add(six);
-        Collect seven=new Collect("呵呵呵","456",R.mipmap.pic);
+        Entity_Collect seven=new Entity_Collect("呵呵呵","456",R.mipmap.pic);
         browseList.add(seven);
-        Collect eigth=new Collect("呵呵呵","456",R.mipmap.pic);
+        Entity_Collect eigth=new Entity_Collect("呵呵呵","456",R.mipmap.pic);
         browseList.add(eigth);
-        Collect nine=new Collect("呵呵呵","456",R.mipmap.pic);
+        Entity_Collect nine=new Entity_Collect("呵呵呵","456",R.mipmap.pic);
         browseList.add(nine);
-        Collect ten=new Collect("呵呵呵","456",R.mipmap.pic);
+        Entity_Collect ten=new Entity_Collect("呵呵呵","456",R.mipmap.pic);
         browseList.add(ten);
-        Collect tenone=new Collect("呵呵呵","456",R.mipmap.pic);
+        Entity_Collect tenone=new Entity_Collect("呵呵呵","456",R.mipmap.pic);
         browseList.add(tenone);
     }
 }

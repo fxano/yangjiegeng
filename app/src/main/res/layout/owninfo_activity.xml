@@ -19,7 +19,7 @@
             android:layout_marginBottom="138dp"
             android:layout_marginRight="10dp"
             android:src="@mipmap/shezi" />
-        <demo.com.AvatarImageView
+        <demo.com.tool.AvatarImageView
             android:id="@+id/otherinfo"
             android:layout_width="65dp"
             android:layout_height="65dp"

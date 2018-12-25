@@ -1,6 +1,5 @@
 package demo.com.adapter;
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,18 +8,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.List;
 import demo.com.R;
-public class BrowseAdapter extends ArrayAdapter<Collect> {
+public class BrowseAdapter extends ArrayAdapter<Entity_Collect> {
     private  int resourceId;
     public int del=2;
     private  Context context;
-    public BrowseAdapter(Context context, int textViewResourceId,List<Collect> objects) {
+    public BrowseAdapter(Context context, int textViewResourceId,List<Entity_Collect> objects) {
         super(context,textViewResourceId, objects);
         resourceId=textViewResourceId;
         this.context=context;
     }
     @Override
     public View getView(final int position, View convertView, final ViewGroup parent) {
-        final Collect collect=(Collect) getItem(position);
+        final Entity_Collect entityCollect =(Entity_Collect) getItem(position);
         View view;
         final ViewHolder viewHolder;
         if(convertView==null){
@@ -36,13 +35,13 @@ public class BrowseAdapter extends ArrayAdapter<Collect> {
             viewHolder = (ViewHolder) view.getTag();
         }
         if (del%2==0){
-            viewHolder.collecttit.setText(collect.getCollecttit());
-            viewHolder.collectcov.setText(collect.getCollectcov());
-            viewHolder.collectimg.setImageResource(collect.getCollectimg());
+            viewHolder.collecttit.setText(entityCollect.getCollecttit());
+            viewHolder.collectcov.setText(entityCollect.getCollectcov());
+            viewHolder.collectimg.setImageResource(entityCollect.getCollectimg());
         }else{
-            viewHolder.collecttit.setText(collect.getCollecttit());
-            viewHolder.collectcov.setText(collect.getCollectcov());
-            viewHolder.collectimg.setImageResource(collect.getCollectimg());
+            viewHolder.collecttit.setText(entityCollect.getCollecttit());
+            viewHolder.collectcov.setText(entityCollect.getCollectcov());
+            viewHolder.collectimg.setImageResource(entityCollect.getCollectimg());
             viewHolder.collectdel.setVisibility(View.VISIBLE);
         }
         viewHolder.collectdel.setOnClickListener(new View.OnClickListener() {

@@ -1,4 +1,4 @@
-package demo.com;
+package demo.com.tool;
 /**
  * Created by Caoling on 2018/11/24.
  */
