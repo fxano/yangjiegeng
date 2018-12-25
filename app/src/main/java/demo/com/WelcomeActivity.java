@@ -13,7 +13,7 @@ public class WelcomeActivity extends Activity {
         setContentView(R.layout.welcome_activity);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        startActivity(new Intent(WelcomeActivity.this,LoginActivity.class));
+        startActivity(new Intent(WelcomeActivity.this,MainActivity.class));
         finish();
     }
 }
