@@ -2,6 +2,7 @@ package demo.com;
 /**
  * Created by Caoling on 2018/11/24.
  */
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -14,6 +15,8 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.ImageView;
+
+@SuppressLint("AppCompatCustomView")
 public class AvatarImageView extends ImageView {
     private Paint paint = new Paint();
     public AvatarImageView(Context context) {
@@ -80,4 +83,5 @@ public class AvatarImageView extends ImageView {
         canvas.drawBitmap(bitmap, rect, rect, paint);
         return output;
     }
+
 }

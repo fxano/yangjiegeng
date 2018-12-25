@@ -1,11 +1,9 @@
 package demo.com;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 
@@ -29,7 +27,7 @@ public class OwnBrowse extends Activity {
             }
         });
         initCollect();
-        final CollectionAdapter adapter=new CollectionAdapter(OwnBrowse.this,R.layout.collect_item,browseList);
+        final CollectionAdapter adapter=new CollectionAdapter(OwnBrowse.this,R.layout.item_collect,browseList);
         final ListView listview = (ListView) findViewById(R.id.browseList);
         listview.setAdapter(adapter);
         RelativeLayout delbuttom =findViewById(R.id.delbuttom);

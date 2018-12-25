@@ -3,6 +3,7 @@ package demo.com;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.Window;
 import android.view.WindowManager;
 public class WelcomeActivity extends Activity {
@@ -11,8 +12,7 @@ public class WelcomeActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_activity);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        SystemClock.sleep(1000);
         startActivity(new Intent(WelcomeActivity.this,LoginActivity.class));
         finish();
     }

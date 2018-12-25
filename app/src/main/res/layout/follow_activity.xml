@@ -28,9 +28,18 @@
         </ListView>
     </LinearLayout>
     <ListView
+        android:id="@+id/list_article"
         android:layout_below="@id/follow"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        android:dividerHeight="13dp"
+       >
     </ListView>
     <LinearLayout
         android:id="@+id/bot"
