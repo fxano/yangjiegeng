@@ -13,7 +13,7 @@ public class WelcomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_activity);
         SystemClock.sleep(1000);
-        startActivity(new Intent(WelcomeActivity.this,LoginActivity.class));
+        startActivity(new Intent(WelcomeActivity.this,MainActivity.class));
         finish();
     }
 }

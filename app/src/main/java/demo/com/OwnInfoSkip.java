@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 public class OwnInfoSkip extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.owninfo_activity, null);
@@ -14,6 +15,8 @@ public class OwnInfoSkip extends Fragment{
         RelativeLayout owntwo =view.findViewById(R.id.owntwo);
         RelativeLayout ownthree =view.findViewById(R.id.ownthree);
         RelativeLayout ownfour =view.findViewById(R.id.ownfour);
+        TextView myfollow=view.findViewById(R.id.myfollow);
+        TextView myfans=view.findViewById(R.id.myfans);
         ImageView setting =view.findViewById(R.id.setting);
         ownone.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +46,18 @@ public class OwnInfoSkip extends Fragment{
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(),SettingActivity.class));
+            }
+        });
+        myfollow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),MyFollow.class));
+            }
+        });
+        myfans.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),MyFans.class));
             }
         });
         return view;

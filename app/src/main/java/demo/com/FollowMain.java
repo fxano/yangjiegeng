@@ -1,46 +1,24 @@
 package demo.com;
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.view.ViewGroup;
 import android.widget.ListView;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import demo.com.adapter.ArticleAdapter;
 import demo.com.adapter.Entity_Article;
-
-public class FollowMain extends Activity{
+public class FollowMain extends Fragment {
     List<Entity_Article> list;
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.follow_activity);
-        LinearLayout my = (LinearLayout) findViewById(R.id.my);//跳转我的
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.follow_activity, null);
         list = new ArrayList<>();
-        my.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(FollowMain.this,OwnInfoSkip.class));
-                finish();
-            }
-        });
-        LinearLayout index = (LinearLayout) findViewById(R.id.index);//跳转到首页
-        index.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(FollowMain.this,LoginActivity.class));
-                finish();
-            }
-        });
-        ListView lv = findViewById(R.id.list_article);
+        ListView lv = view.findViewById(R.id.list_article);
         initData();
-        ArticleAdapter ap = new ArticleAdapter(list,this);
+        ArticleAdapter ap = new ArticleAdapter(list,getContext());
         lv.setAdapter(ap);
+        return view;
     }
     private int head;
     private String name;
@@ -50,7 +28,6 @@ public class FollowMain extends Activity{
     private int like;
     private int comment;
     private int collection;
-
     private void initData() {
         for(int i=0;i<10;i++){
             Entity_Article a = new Entity_Article();
