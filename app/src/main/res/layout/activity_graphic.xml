@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -30,8 +29,7 @@
                 android:layout_width="33dp"
                 android:layout_height="33dp"
                 android:src="@mipmap/pic"
-                android:layout_marginTop="7dp"
-                />
+                android:layout_marginTop="7dp"/>
             <TextView
                 android:layout_toRightOf="@+id/iv"
                 android:layout_width="wrap_content"
@@ -40,8 +38,7 @@
                 android:layout_marginLeft="7dp"
                 android:layout_centerVertical="true"
                 android:textColor="@android:color/white"
-                android:textSize="13sp"
-                />
+                android:textSize="13sp"/>
         </RelativeLayout>
         <Button
             android:layout_width="34dp"
@@ -63,16 +60,14 @@
         android:textColor="#000"
         android:textSize="14sp"
         android:gravity="center"
-        android:layout_marginLeft="10dp"
-        />
+        android:layout_marginLeft="10dp"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_alignParentBottom="true"
         android:background="#fff"
         android:paddingTop="20dp"
-        android:paddingLeft="10dp"
-        >
+        android:paddingLeft="10dp">
         <EditText
             android:layout_width="120dp"
             android:layout_height="20dp"
@@ -85,31 +80,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toRightOf="@id/ed_comm"
-            android:layout_marginLeft="24dp"
-            >
+            android:layout_marginLeft="24dp">
             <ImageButton
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:background="@mipmap/like"
-                />
+                android:background="@mipmap/like"/>
             <ImageButton
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:background="@mipmap/comments"
-                android:layout_marginLeft="40dp"
-                />
+                android:layout_marginLeft="40dp"/>
             <ImageButton
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:background="@mipmap/forwarding"
-                android:layout_marginLeft="40dp"
-                />
+                android:layout_marginLeft="40dp"/>
             <ImageButton
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:background="@mipmap/collection_this"
-                android:layout_marginLeft="40dp"
-                />
+                android:layout_marginLeft="40dp"/>
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="demo.com">
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,25 +11,27 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".OwnInfoSkip"/>
-        <activity android:name=".OwnRelease"/>
-        <activity android:name=".OwnCollection"/>
-        <activity android:name=".OwnComment"/>
-        <activity android:name=".OwnBrowse"/>
-        <activity android:name=".MyFollow"/>
-        <activity android:name=".MyFans"/>
-        <activity android:name=".FollowMain"/>
-        <activity android:name=".LoginActivity"/>
+        <activity android:name=".OwnRelease" />
+        <activity android:name=".OwnCollection" />
+        <activity android:name=".OwnComment" />
+        <activity android:name=".OwnBrowse" />
+        <activity android:name=".MyFollow" />
+        <activity android:name=".MyFans" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".SettingSafety" />
         <activity android:name=".SettingAbout" />
         <activity android:name=".SettingHelp" />
-        <activity android:name=".WelcomeActivity"
-                  android:theme="@style/AppWelcome">
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppWelcome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ReleaseMain"></activity>
     </application>
+
 </manifest>
