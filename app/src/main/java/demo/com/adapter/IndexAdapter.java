@@ -62,7 +62,6 @@ public class IndexAdapter extends BaseAdapter {
         v.heat2.setText(list.get(position).getHeat2());
         v.head1.setImageResource(list.get(position).getHead1());
         v.head2.setImageResource(list.get(position).getHead2());
-
         return convertView;
     }
     class ViewHolder{
