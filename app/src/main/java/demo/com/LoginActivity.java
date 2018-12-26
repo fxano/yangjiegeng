@@ -6,13 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import demo.com.adapter.Entity_IndexArticle;
 import demo.com.adapter.IndexAdapter;
-
 public class LoginActivity extends Fragment {
     List<Entity_IndexArticle> list;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -61,12 +58,5 @@ public class LoginActivity extends Fragment {
             // listView.getDividerHeight()获取子项间分隔符占用的高度
             // params.height最后得到整个ListView完整显示需要的高度
             listView.setLayoutParams(params);
-
         }
     }
-
-
-
-
-
-

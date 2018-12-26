@@ -50,7 +50,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:layout_marginLeft="10dp"
                     android:text="韩妆无辜大眼睛美妆视频 教你5分钟搞定"
                     android:layout_marginTop="8dp"
