@@ -64,11 +64,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener,On
     public void onPageScrolled(int arg0, float arg1, int arg2) {
         // TODO Auto-generated method stub
     }
-
-
-
-
-
     @Override
     public void onPageSelected(int arg0) {
         switch (arg0) {
@@ -116,14 +111,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener,On
                 break;
         }
     }
-
-
-
-
-
-
-
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -175,13 +162,4 @@ public class MainActivity extends FragmentActivity implements OnClickListener,On
                 break;
         }
     }
-
-
-
-
-
-
-
-
-
 }
