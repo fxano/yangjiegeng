@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="25dp">
+    <LinearLayout
+        android:layout_width="163dp"
+        android:layout_height="165dp"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:src="@mipmap/xinzi" />
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="11dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="日常眼妆教程，新手必备，容易学习。"
+            android:textColor="#000"
+            android:textSize="13sp" />
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <demo.com.tool.AvatarImageView
+                android:id="@+id/head1"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:src="@mipmap/pic" />
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:text="洋桔梗"
+                android:textColor="#000"
+                android:textSize="12sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/firealarm"
+                    />
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/heat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="160"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#fff"
+        android:layout_marginLeft="13dp"
+        android:layout_width="163dp"
+        android:layout_height="165dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:src="@mipmap/xinzi" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="11dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="日常眼妆教程，新手必备，容易学习。"
+            android:textColor="#000"
+            android:textSize="13sp" />
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <demo.com.tool.AvatarImageView
+                android:id="@+id/head2"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:src="@mipmap/pic" />
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:text="洋桔梗"
+                android:textColor="#000"
+                android:textSize="12sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/firealarm"
+                    />
+
+                <TextView
+                    android:id="@+id/heat2"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="160"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

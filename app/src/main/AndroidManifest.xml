@@ -31,7 +31,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".ReleaseMain"></activity>
     </application>
 
 </manifest>
