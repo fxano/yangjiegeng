@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
-import demo.com.adapter.ArticleAdapter;
+import demo.com.adapter.Adapter_Article;
 import demo.com.adapter.Entity_Article;
 public class FollowMain extends Fragment {
     List<Entity_Article> list;
@@ -16,7 +16,7 @@ public class FollowMain extends Fragment {
         list = new ArrayList<>();
         ListView lv = view.findViewById(R.id.list_article);
         initData();
-        ArticleAdapter ap = new ArticleAdapter(list,getContext());
+        Adapter_Article ap = new Adapter_Article(list,getContext());
         lv.setAdapter(ap);
         return view;
     }

@@ -8,7 +8,7 @@ import android.widget.RelativeLayout;
 import java.util.ArrayList;
 import java.util.List;
 import demo.com.adapter.Entity_Collect;
-import demo.com.adapter.CollectionAdapter;
+import demo.com.adapter.Adapter_Collection;
 public class OwnCollection extends Activity {
     private List<Entity_Collect> entityCollectList =new ArrayList<>();
     @Override
@@ -23,7 +23,7 @@ public class OwnCollection extends Activity {
             }
         });
         initCollect();
-        final CollectionAdapter adapter=new CollectionAdapter(OwnCollection.this,R.layout.item_collect, entityCollectList);
+        final Adapter_Collection adapter=new Adapter_Collection(OwnCollection.this,R.layout.item_collect, entityCollectList);
         final ListView listview = (ListView) findViewById(R.id.collectionList);
         listview.setAdapter(adapter);
         RelativeLayout delbuttom =findViewById(R.id.delbuttom);

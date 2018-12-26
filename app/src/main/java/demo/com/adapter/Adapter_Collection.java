@@ -8,11 +8,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.List;
 import demo.com.R;
-public class CollectionAdapter extends ArrayAdapter<Entity_Collect> {
+public class Adapter_Collection extends ArrayAdapter<Entity_Collect> {
     private  int resourceId;
     public int del=2;
     private  Context context;
-    public CollectionAdapter(Context context, int textViewResourceId,List<Entity_Collect> objects) {
+    public Adapter_Collection(Context context, int textViewResourceId, List<Entity_Collect> objects) {
         super(context,textViewResourceId, objects);
         resourceId=textViewResourceId;
         this.context=context;

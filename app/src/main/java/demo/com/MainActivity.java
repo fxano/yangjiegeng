@@ -11,25 +11,25 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
-import demo.com.adapter.ViewPageAdapter;
+import demo.com.adapter.Adapter_ViewPage;
 public class MainActivity extends FragmentActivity implements OnClickListener,OnPageChangeListener {
     private LinearLayout index,release,follow,my;
     private ImageView mainimg1,mainimg2,mainimg3,mainimg4;
     private TextView maintex1,maintex2,maintex3,maintex4;
     private ViewPager vp;
     private List<Fragment> mList;
-    private ViewPageAdapter vpa;
+    private Adapter_ViewPage vpa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
         mList = new ArrayList<Fragment>();
-        mList.add(new LoginActivity());
+        mList.add(new IndexActivity());
         mList.add(new ReleaseMain());
         mList.add(new FollowMain());
         mList.add(new OwnInfoSkip());
-        vpa = new ViewPageAdapter(getSupportFragmentManager(), mList);
+        vpa = new Adapter_ViewPage(getSupportFragmentManager(), mList);
         vp.setAdapter(vpa);
         vp.setCurrentItem(0);
         mainimg1.setImageResource(R.mipmap.index_this);
