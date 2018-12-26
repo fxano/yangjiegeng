@@ -11,10 +11,10 @@ import java.util.List;
 
 import demo.com.R;
 
-public class IndexAdapter extends BaseAdapter {
+public class Adapter_Index extends BaseAdapter {
     private List<Entity_IndexArticle> list;
     private Context context;
-    public IndexAdapter(List list, Context context){
+    public Adapter_Index(List list, Context context){
         this.list=list;
         this.context=context;
     }

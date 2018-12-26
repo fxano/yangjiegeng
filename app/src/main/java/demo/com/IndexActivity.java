@@ -6,20 +6,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.ScrollView;
+
 import java.util.ArrayList;
 import java.util.List;
 import demo.com.adapter.Entity_IndexArticle;
-import demo.com.adapter.IndexAdapter;
-public class LoginActivity extends Fragment {
+import demo.com.adapter.Adapter_Index;
+public class IndexActivity extends Fragment {
     List<Entity_IndexArticle> list;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_login, null);
+        View view = inflater.inflate(R.layout.activity_index, null);
         ListView lv = view.findViewById(R.id.lv);
         list = new ArrayList<>();
         initData();
-        IndexAdapter ia = new IndexAdapter(list, getActivity());
+        Adapter_Index ia = new Adapter_Index(list, getActivity());
         lv.setAdapter(ia);
         setListViewHeightBasedOnChildren(lv);
+        ScrollView sv = view.findViewById(R.id.sv);
+        sv.smoothScrollTo(0, 0);
         return view;
     }
     private void initData() {

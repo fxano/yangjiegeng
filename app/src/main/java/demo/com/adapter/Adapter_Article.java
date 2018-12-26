@@ -13,10 +13,10 @@ import java.util.List;
 
 import demo.com.R;
 
-public class ArticleAdapter extends BaseAdapter {
+public class Adapter_Article extends BaseAdapter {
     private List<Entity_Article> list;
     private Context context;
-    public ArticleAdapter(List list,Context context){
+    public Adapter_Article(List list, Context context){
         this.list=list;
         this.context=context;
     }

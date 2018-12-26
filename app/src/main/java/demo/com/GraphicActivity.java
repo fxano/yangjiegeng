@@ -13,7 +13,7 @@ public class GraphicActivity extends AppCompatActivity {//余松彦
         setContentView(R.layout.activity_graphic);
     }
     public void backclick(View v){
-        Intent i=new Intent(this,LoginActivity.class);
+        Intent i=new Intent(this,IndexActivity.class);
         startActivity(i);
     }
 }

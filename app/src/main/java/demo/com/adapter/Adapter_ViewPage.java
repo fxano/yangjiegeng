@@ -7,10 +7,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.view.ViewGroup;
 
-public class ViewPageAdapter extends FragmentPagerAdapter {
+public class Adapter_ViewPage extends FragmentPagerAdapter {
     private List<Fragment> mList;
 
-    public ViewPageAdapter(FragmentManager fm , List<Fragment> mList) {
+    public Adapter_ViewPage(FragmentManager fm , List<Fragment> mList) {
         super(fm);
         this.mList = mList;
     }

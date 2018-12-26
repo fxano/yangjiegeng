@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import demo.com.adapter.Entity_Collect;
-import demo.com.adapter.CollectionAdapter;
+import demo.com.adapter.Adapter_Collection;
 
 public class OwnBrowse extends Activity {
     private List<Entity_Collect> browseList=new ArrayList<>();
@@ -27,7 +27,7 @@ public class OwnBrowse extends Activity {
             }
         });
         initCollect();
-        final CollectionAdapter adapter=new CollectionAdapter(OwnBrowse.this,R.layout.item_collect,browseList);
+        final Adapter_Collection adapter=new Adapter_Collection(OwnBrowse.this,R.layout.item_collect,browseList);
         final ListView listview = (ListView) findViewById(R.id.browseList);
         listview.setAdapter(adapter);
         RelativeLayout delbuttom =findViewById(R.id.delbuttom);

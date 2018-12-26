@@ -8,11 +8,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.List;
 import demo.com.R;
-public class BrowseAdapter extends ArrayAdapter<Entity_Collect> {
+public class Adapter_Browse extends ArrayAdapter<Entity_Collect> {
     private  int resourceId;
     public int del=2;
     private  Context context;
-    public BrowseAdapter(Context context, int textViewResourceId,List<Entity_Collect> objects) {
+    public Adapter_Browse(Context context, int textViewResourceId, List<Entity_Collect> objects) {
         super(context,textViewResourceId, objects);
         resourceId=textViewResourceId;
         this.context=context;
