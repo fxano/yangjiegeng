@@ -40,23 +40,17 @@ public class Adapter_video_comment extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-       ViewHolder v=new ViewHolder();
-        if(convertView==null){
-            convertView = View.inflate(context, R.layout.item_video_comment, null);
-            v.head = convertView.findViewById(R.id.head);
-            v.title = convertView.findViewById(R.id.title);
-            v.content=convertView.findViewById(R.id.content);
-            v.time=convertView.findViewById(R.id.time);
-            v.like=convertView.findViewById(R.id.like_state);
-            convertView.setTag(v);
-        }else{
-            v= (ViewHolder) convertView.getTag();
-        }
-        v.head.setImageResource(list.get(position).getHead());
-        v.title.setText(list.get(position).getTitle());
-        v.content.setText(list.get(position).getContent());
-        v.time.setText(list.get(position).getTime());
-        v.like.setOnClickListener(new View.OnClickListener() {
+            View v = View.inflate(context, R.layout.item_video_comment, null);
+            ImageView head = v.findViewById(R.id.head);
+            TextView title = v.findViewById(R.id.title);
+            TextView content=v.findViewById(R.id.content);
+            TextView time=v.findViewById(R.id.time);
+            ImageView like=v.findViewById(R.id.like_state);
+            head.setImageResource(list.get(position).getHead());
+            title.setText(list.get(position).getTitle());
+            content.setText(list.get(position).getContent());
+            time.setText(list.get(position).getTime());
+            like.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 v.setBackgroundResource(R.mipmap.like_this);
@@ -75,7 +69,7 @@ public class Adapter_video_comment extends BaseAdapter {
 
             }
         });
-        return convertView;
+        return v;
     }
     class ViewHolder{
         ImageView head;
