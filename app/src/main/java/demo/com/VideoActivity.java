@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +23,13 @@ public class VideoActivity extends AppCompatActivity {
         initData();
         ListView lv = findViewById(R.id.lv_comments);
         lv.setAdapter(new Adapter_video_comment(list,this));
+        RelativeLayout imgback =findViewById(R.id.imgback);
+        imgback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 
     private void initData() {
@@ -35,8 +43,4 @@ public class VideoActivity extends AppCompatActivity {
         }
     }
 
-    public void backclick(View v){
-        Intent i=new Intent(this,IndexActivity.class);
-        startActivity(i);
-    }
 }

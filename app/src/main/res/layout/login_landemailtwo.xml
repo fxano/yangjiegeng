@@ -14,21 +14,20 @@
             android:layout_width="140dp"
             android:layout_height="36dp"
             android:src="@mipmap/logo"
-            android:layout_above="@id/edit"
+            android:layout_above="@id/emailtext"
             android:layout_marginBottom="30dp"
             android:layout_centerHorizontal="true" />
-        <EditText
-            android:id="@+id/edit"
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/emailtext"
             android:layout_width="230dp"
             android:layout_height="40dp"
             android:layout_centerHorizontal="true"
-            android:hint="验证码"
-            android:background="@null"
             android:textSize="14sp"
             android:layout_above="@id/line"
             android:textColor="@android:color/darker_gray" />
         <ImageView
-            android:layout_toRightOf="@id/edit"
+            android:layout_toRightOf="@id/emailtext"
             android:layout_marginTop="132dp"
             android:layout_marginLeft="-22dp"
             android:layout_width="wrap_content"

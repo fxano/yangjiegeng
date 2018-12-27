@@ -9,7 +9,6 @@ import android.util.Log;
 import android.view.WindowManager;
 import demo.com.R;
 import demo.com.login_fragment.Login_LandEmail;
-import demo.com.login_fragment.Login_LandEmailTwo;
 public class LoginMainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
