@@ -5,6 +5,8 @@ public class Entity_video_comment {
     private String title;
     private String content;
     private String time;
+
+
     public int getHead() {
         return head;
     }
