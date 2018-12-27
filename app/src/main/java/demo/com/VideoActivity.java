@@ -54,6 +54,7 @@ public class VideoActivity extends AppCompatActivity {
             e.setTitle("我是个流氓"+i);
             e.setContent("用户就是父母"+i);
             e.setTime("06:1"+i);
+            e.setLike(false);
             list.add(e);
         }
     }
