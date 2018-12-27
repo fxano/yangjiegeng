@@ -43,7 +43,6 @@ public class Adapter_video_comment extends BaseAdapter {
             v.title = convertView.findViewById(R.id.title);
             v.content=convertView.findViewById(R.id.content);
             v.time=convertView.findViewById(R.id.time);
-            v.like=convertView.findViewById(R.id.like);
             convertView.setTag(v);
         }else{
             v= (ViewHolder) convertView.getTag();
@@ -52,7 +51,6 @@ public class Adapter_video_comment extends BaseAdapter {
         v.title.setText(list.get(position).getTitle());
         v.content.setText(list.get(position).getContent());
         v.time.setText(list.get(position).getTime());
-        v.like.setImageResource(list.get(position).getLike());
         return convertView;
     }
     class ViewHolder{
@@ -60,6 +58,5 @@ public class Adapter_video_comment extends BaseAdapter {
         TextView title;
         TextView content;
         TextView time;
-        ImageView like;
     }
 }

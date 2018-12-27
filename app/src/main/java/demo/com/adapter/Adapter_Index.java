@@ -1,15 +1,19 @@
 package demo.com.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.List;
 
+import demo.com.MainActivity;
 import demo.com.R;
+import demo.com.VideoActivity;
 
 public class Adapter_Index extends BaseAdapter {
     private List<Entity_IndexArticle> list;
@@ -48,6 +52,9 @@ public class Adapter_Index extends BaseAdapter {
             v.heat2=convertView.findViewById(R.id.heat2);
             v.head1=convertView.findViewById(R.id.head1);
             v.head2=convertView.findViewById(R.id.head2);
+            v.ll1=convertView.findViewById(R.id.ll1);
+            v.ll2=convertView.findViewById(R.id.ll2);
+
             convertView.setTag(v);
         }else{
             v= (ViewHolder) convertView.getTag();
@@ -62,9 +69,25 @@ public class Adapter_Index extends BaseAdapter {
         v.heat2.setText(list.get(position).getHeat2());
         v.head1.setImageResource(list.get(position).getHead1());
         v.head2.setImageResource(list.get(position).getHead2());
+        v.ll1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(context,VideoActivity.class);
+                context.startActivity(i);
+            }
+        });
+        v.ll2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(context,VideoActivity.class);
+                context.startActivity(i);
+            }
+        });
         return convertView;
     }
     class ViewHolder{
+        LinearLayout ll1;
+        LinearLayout ll2;
         ImageView image1;
         ImageView image2;
         TextView title1;
