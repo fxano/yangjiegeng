@@ -7,6 +7,7 @@ public class Entity_video_comment {
     private String time;
 
 
+    private boolean like;
     public int getHead() {
         return head;
     }
@@ -39,7 +40,11 @@ public class Entity_video_comment {
         this.time = time;
     }
 
+    public boolean isLike() {
+        return like;
+    }
 
-
-
+    public void setLike(boolean like) {
+        this.like = like;
+    }
 }
