@@ -3,74 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/beij">
-<RelativeLayout
-    android:layout_width="424dp"
-    android:layout_height="449dp"
-    android:background="@drawable/login_radius"
-    android:layout_marginTop="192dp"
-    android:layout_centerHorizontal="true">
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="54dp"
-            android:src="@mipmap/logo"
-            android:layout_above="@id/mail"
-            android:layout_marginBottom="41dp"
-            android:layout_centerHorizontal="true" />
-    <EditText
-        android:layout_width="346dp"
-        android:layout_height="73dp"
-        android:layout_centerHorizontal="true"
-        android:hint="邮箱"
-        android:background="@null"
-        android:id="@+id/mail"
-        android:layout_above="@id/line"
-        android:textColor="@android:color/darker_gray" />
-    <View
-        android:id="@+id/line"
-        android:layout_width="346dp"
-        android:layout_height="2dp"
-        android:background="@android:color/holo_purple"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@id/button"
-        android:layout_marginBottom="53dp">
-    </View>
-    <Button
-        android:id="@+id/button"
-        android:layout_width="346dp"
-        android:layout_height="58dp"
-        android:text="下一步"
-        android:background="@drawable/button_login"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="96dp"
-        android:textSize="22sp"
-        android:textColor="@android:color/white" />
-</RelativeLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="23dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="注册账号"
-            android:textColor="@android:color/white"
-            android:textSize="17sp" />
-        <View
-            android:layout_width="1dp"
-            android:layout_height="23dp"
-            android:background="@android:color/white"
-            android:layout_marginLeft="6dp"
-            android:layout_marginRight="6dp">
-        </View>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="遇到问题"
-            android:textColor="@android:color/white"
-            android:textSize="17sp" />
-    </LinearLayout>
+<FrameLayout
+    android:id="@+id/loginFrag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</FrameLayout>
 </RelativeLayout>

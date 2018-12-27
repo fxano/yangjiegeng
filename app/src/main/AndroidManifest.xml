@@ -29,6 +29,5 @@
         <activity android:name=".SettingAbout" />
         <activity android:name=".SettingHelp" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".VideoActivity"/>
     </application>
 </manifest>
