@@ -4,6 +4,10 @@ import android.content.Context;
 import android.media.Image;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
+import android.view.animation.RotateAnimation;
+import android.view.animation.ScaleAnimation;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -43,6 +47,7 @@ public class Adapter_video_comment extends BaseAdapter {
             v.title = convertView.findViewById(R.id.title);
             v.content=convertView.findViewById(R.id.content);
             v.time=convertView.findViewById(R.id.time);
+            v.like=convertView.findViewById(R.id.like_state);
             convertView.setTag(v);
         }else{
             v= (ViewHolder) convertView.getTag();
@@ -51,6 +56,25 @@ public class Adapter_video_comment extends BaseAdapter {
         v.title.setText(list.get(position).getTitle());
         v.content.setText(list.get(position).getContent());
         v.time.setText(list.get(position).getTime());
+        v.like.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.setBackgroundResource(R.mipmap.like_this);
+                AnimationSet as=new AnimationSet(true);
+                RotateAnimation ra=new RotateAnimation(0, -30, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+                ra.setDuration(500);
+                ra.setRepeatCount(1);
+                ra.setRepeatMode(Animation.REVERSE);
+                ScaleAnimation sa=new ScaleAnimation(1.0f, 1.3f, 1.0f, 1.3f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+                sa.setDuration(500);
+                sa.setRepeatCount(1);
+                sa.setRepeatMode(Animation.REVERSE);
+                as.addAnimation(ra);
+                as.addAnimation(sa);
+                v.setAnimation(as);
+
+            }
+        });
         return convertView;
     }
     class ViewHolder{
@@ -58,5 +82,6 @@ public class Adapter_video_comment extends BaseAdapter {
         TextView title;
         TextView content;
         TextView time;
+        ImageView like;
     }
 }

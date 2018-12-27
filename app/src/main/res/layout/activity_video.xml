@@ -64,15 +64,14 @@
         android:textSize="18sp"
         android:gravity="center_vertical"
         android:layout_marginLeft="10dp" />
-    <TextView
+    <VideoView
         android:layout_width="match_parent"
         android:layout_height="202dp"
-        android:id="@+id/Video"
-        android:layout_below="@id/title"
-        android:background="#000"/>
+        android:id="@+id/video"
+        android:layout_below="@id/title" />
     <ListView
         android:id="@+id/lv_comments"
-        android:layout_below="@id/Video"
+        android:layout_below="@id/video"
         android:layout_marginBottom="60dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
