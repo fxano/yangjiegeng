@@ -1,14 +1,10 @@
 package demo.com;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.Window;
-import android.view.WindowManager;
-
 import demo.com.tool.LoginMainActivity;
-
 public class WelcomeActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
