@@ -30,7 +30,6 @@ public class VideoActivity extends AppCompatActivity {
             e.setHead(R.mipmap.pic);
             e.setTitle("我是个流氓"+i);
             e.setContent("用户就是父母"+i);
-            e.setLike(R.mipmap.like);
             e.setTime("06:1"+i);
             list.add(e);
         }

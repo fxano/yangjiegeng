@@ -4,12 +4,14 @@
     android:layout_height="165dp"
     android:orientation="horizontal"
     android:layout_marginTop="25dp">
+
     <LinearLayout
+        android:id="@+id/ll1"
         android:layout_width="163dp"
         android:layout_height="165dp"
-        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
         android:background="#fff"
-        android:layout_marginLeft="10dp">
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/image1"
@@ -29,11 +31,12 @@
             android:text="日常眼妆教程，新手必备，容易学习。"
             android:textColor="#000"
             android:textSize="13sp" />
+
         <LinearLayout
-            android:layout_marginTop="7dp"
-            android:layout_marginLeft="7dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
             android:orientation="horizontal">
 
             <demo.com.tool.AvatarImageView
@@ -51,33 +54,36 @@
                 android:text="洋桔梗"
                 android:textColor="#000"
                 android:textSize="12sp" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginLeft="40dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="40dp">
+                android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="20dp"
-                    android:src="@mipmap/firealarm"
-                    />
+                    android:src="@mipmap/firealarm" />
 
                 <TextView
-                    android:layout_marginTop="2dp"
                     android:id="@+id/heat1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
                     android:text="160"
                     android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
-        android:background="#fff"
-        android:layout_marginLeft="13dp"
+        android:id="@+id/ll2"
         android:layout_width="163dp"
         android:layout_height="165dp"
+        android:layout_marginLeft="13dp"
+        android:background="#fff"
         android:orientation="vertical">
 
         <ImageView
@@ -98,11 +104,12 @@
             android:text="日常眼妆教程，新手必备，容易学习。"
             android:textColor="#000"
             android:textSize="13sp" />
+
         <LinearLayout
-            android:layout_marginTop="7dp"
-            android:layout_marginLeft="7dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
             android:orientation="horizontal">
 
             <demo.com.tool.AvatarImageView
@@ -120,23 +127,24 @@
                 android:text="洋桔梗"
                 android:textColor="#000"
                 android:textSize="12sp" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginLeft="40dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="40dp">
+                android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="20dp"
-                    android:src="@mipmap/firealarm"
-                    />
+                    android:src="@mipmap/firealarm" />
 
                 <TextView
                     android:id="@+id/heat2"
-                    android:layout_marginTop="2dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
                     android:text="160"
                     android:textSize="12sp" />
             </LinearLayout>
