@@ -27,7 +27,6 @@ public class Login_AccountLand extends Fragment {
         landing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
                 Login_LandEmail landing = new Login_LandEmail();

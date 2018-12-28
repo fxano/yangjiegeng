@@ -45,7 +45,15 @@
         </RelativeLayout>
     </RelativeLayout>
     <ListView
+        android:paddingTop="13dp"
+        android:id="@+id/commentlist"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:divider="@null"
+
+        android:headerDividersEnabled="false"   android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:dividerHeight="13dp">
     </ListView>
 </LinearLayout>
