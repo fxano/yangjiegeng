@@ -13,10 +13,7 @@
         <activity
             android:name=".WelcomeActivity"
             android:theme="@style/AppWelcome">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity android:name=".OwnRelease" />
         <activity android:name=".OwnCollection" />
@@ -30,6 +27,11 @@
         <activity android:name=".SettingHelp" />
         <activity android:name=".MainActivity" />
         <activity android:name=".VideoActivity"/>
-        <activity android:name=".tool.LoginMainActivity"/>
+        <activity android:name=".tool.LoginMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

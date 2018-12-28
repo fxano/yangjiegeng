@@ -20,7 +20,7 @@ public class Login_LandEmail extends Fragment {
             public void onClick(View v) {//下一步
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                Login_LandEmailTwo landing = new Login_LandEmailTwo();
+                Login_LandEmailThree landing = new Login_LandEmailThree();
                 transaction.add(R.id.loginFrag, landing);
                 transaction.commit();
             }
