@@ -5,13 +5,10 @@ public class Entity_video_comment {
     private String title;
     private String content;
     private String time;
-
-
     private boolean like;
     public int getHead() {
         return head;
     }
-
     public void setHead(int head) {
         this.head = head;
     }
