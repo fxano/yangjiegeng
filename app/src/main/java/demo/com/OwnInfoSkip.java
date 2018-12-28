@@ -69,6 +69,7 @@ public class OwnInfoSkip extends Fragment{
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(),LoginMainActivity.class));
+                getActivity().finish();
             }
         });
         return view;
