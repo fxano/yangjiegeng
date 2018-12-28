@@ -51,8 +51,8 @@
             android:layout_gravity="center_horizontal"
             android:layout_height="match_parent"
             android:divider="@null"
-            android:fadingEdge="none"
-            android:headerDividersEnabled="false"
+
+            android:headerDividersEnabled="false"   android:fadingEdge="none"
             android:footerDividersEnabled="false"
             android:dividerHeight="13dp">
         </ListView>

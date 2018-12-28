@@ -5,9 +5,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import demo.com.tool.LoginMainActivity;
+
 public class OwnInfoSkip extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.owninfo_activity, null);
@@ -17,6 +21,7 @@ public class OwnInfoSkip extends Fragment{
         RelativeLayout ownfour =view.findViewById(R.id.ownfour);
         TextView myfollow=view.findViewById(R.id.myfollow);
         TextView myfans=view.findViewById(R.id.myfans);
+        Button ownout=view.findViewById(R.id.ownout);
         ImageView setting =view.findViewById(R.id.setting);
         ownone.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +63,12 @@ public class OwnInfoSkip extends Fragment{
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(),MyFans.class));
+            }
+        });
+        ownout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),LoginMainActivity.class));
             }
         });
         return view;

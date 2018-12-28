@@ -44,7 +44,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener,On
         release =  findViewById(R.id.release);
         mainimg2=findViewById(R.id.mainimg2);
         maintex2=findViewById(R.id.maintex2);
-        follow =  findViewById(R.id.follow);
+        follow=findViewById(R.id.follow);
         mainimg3=findViewById(R.id.mainimg3);
         maintex3=findViewById(R.id.maintex3);
         my = findViewById(R.id.my);
